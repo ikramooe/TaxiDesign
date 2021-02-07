@@ -7,112 +7,128 @@
     <!-- UIkit CSS -->
     
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="css/uikit.min.css" />
     <title>MYNE Transport</title>
+    <style>
+        .uk-navbar-nav>li.uk-active>a{
+            color: white  !important;
+        }
+    </style>
+
 
 </head>
 <body>
-    <nav class="uk-navbar-container uk-visible@m" uk-navbar >
-        <div class="uk-navbar-left">
-            <a href="" class="uk-navbar-item uk-logo">Logo</a>
-            <ul class="uk-navbar-nav">
-                <li class="uk-active"><a href="/nous.html">Qui sommes nous</a></li>
-                <li class="uk-parent"><a href="/contact.html">Contact</a></li>
-                <li><a href=""></a></li>
-            </ul>
-        </div>
+    <header>
+        <nav class="uk-navbar uk-visible@m uk-background-primary" uk-navbar>
+            <div class="uk-navbar-left">
+                <a href="" class="uk-navbar-item uk-logo">
+                    <img src="imgs/logo.png" alt="" style="height: 100px" >    
+                </a>
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="/nous.html" class="uk-text-bold">Qui sommes nous</a></li>
+                    <li class="uk-active"><a href="" class="uk-text-bold">Services</a></li>
+                    <li class="uk-active"><a href="/contact.html" class="uk-text-bold">Contact</a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+            
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="" class="uk-text-bold">S'inscrire</a></li>
+                    <li class="uk-active"><a href="" class="uk-text-bold">Se Connecter</a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="uk-navbar uk-navbar-container uk-hidden@m">
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-toggle" >
+                    <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+                </a>
+                
+            </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="">S'inscrire</a></li>
+                    <li class="uk-parent"><a href="">Se Connecter</a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+        </nav>
+        </header>
+    
+    <div style="background-color: #6C757D;">
+       
+       <div class="uk-padding-large uk-width-1-2 uk-align-center " style="color: white;">
+        <p class="uk-text-center uk-text-bold" style="font-size: 24px;"> 
+           <span>
+            Service
+           </span>  
+           <span style="color:#FFB700;">
+           <u> Transport Professionel </u>
+
+           </span>
+
+           
         
-        <div class="uk-navbar-right">
-            <ul class="uk-navbar-nav">
-                <li class="uk-active"><a href="">S'inscrire</a></li>
-                <li class="uk-parent"><a href="">Se Connecter</a></li>
-                <li><a href=""></a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav class="uk-navbar uk-navbar-container uk-hidden@m">
-        <div class="uk-navbar-left">
-            <a class="uk-navbar-toggle" >
-                <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
-            </a>
-            
-        </div>
-        <div class="uk-navbar-right">
-            <ul class="uk-navbar-nav">
-                <li class="uk-active"><a href="">S'inscrire</a></li>
-                <li class="uk-parent"><a href="">Se Connecter</a></li>
-                <li><a href=""></a></li>
-            </ul>
-        </div>
-    </nav>
-    <div class="uk-cover-container uk-height-large">
-        <img src="imgs/transport.jpeg" alt="" uk-cover>
-        <div class="uk-overlay uk-light uk-position-top-center">
-            <p>Default Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <br>
-            <p>Default Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <br>
-            <p>Default Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <br>
-            <button class="uk-button uk-button-default uk-position-bottom-center">Estimer</button>
-            
-            
-            
-        </div>
-        <div class="uk-overlay uk-light uk-position-bottom-center">
-            <span uk-icon="chevron-down" class=""></span>
-            
+        </p>
+           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora quis exercitationem obcaecati eveniet a unde voluptatem. Vitae incidunt ducimus reiciendis, officia atque maiores illo similique, ad quia ex sequi corporis?</p>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At reiciendis dignissimos a iste, hic praesentium corrupti. Reprehenderit ex voluptatum nostrum maxime! Molestiae, alias! Quas corrupti temporibus porro quae? Voluptatum, excepturi!</p>
         </div>
     </div>
-    <div class="uk-margin uk-container uk-visible@m">
-        <div class="uk-padding-large ">
-            <form class=" uk-box-shadow-medium">
+    <div class="  uk-visible@m" style="background-color: white;">
+        <div class="uk-container uk-padding-large uk-padding-remove-top ">
+            <form class="uk-container uk-box-shadow-medium uk-border-rounded" style="background-color:#FFB700;color: white;">
                 <fieldset class="uk-fieldset uk-text-center">
             
-                    <legend class="uk-legend ">Reservez Mtn ..... </legend>
+                    <legend class="uk-legend uk-padding-small uk-text-bold"> <u> Demande De tarif  </u>
+                     </legend>
             
                     <div class=" uk-grid-small uk-child-width-auto uk-grid uk-align-center"> 
                         <label><input class="uk-radio" type="radio" checked> Aeroport</label>
                         <label><input class="uk-radio" type="radio"> Gare</label>
-                        <label><input class="uk-radio" type="radio"> Longue distance</label>
+                        <label><input class="uk-radio" type="radio"> Longue  Distance </label>
                     </div>
             
-                    <div class="uk-margin-medium uk-text-center uk-flex uk-flex-center  uk-child-width-auto ">
-                        <div class="uk-padding-small">
+                    <div class="uk-text-center uk-flex uk-flex-center  uk-child-width-auto ">
+                        <div class="" >
                             <label for="">Depart</label>
                             <input class="uk-input" type="text" placeholder="Depart">
                         </div>
                         
-                        <div class="uk-padding-small">
+                        <div class="uk-margin-left">
                             <label for="">Destination</label>
-                            <input class="uk-input" type="text" placeholder="Depart">
+                            <input class="uk-input" type="text" placeholder="Destination">
                         </div>
 
                         
                     </div>
 
-                    <div class="uk-margin-medium uk-text-center uk-flex uk-flex-center  uk-child-width-auto ">
+                    <div class="uk-margin-top uk-text-center uk-flex uk-flex-center  uk-child-width-auto ">
                         
-                        <div class="uk-padding-small">
+                        <div class="">
                             <label for="">Trajet</label>
                             <select class="uk-select">
                                 <option>Aller Simple</option>
                                 <option>Aller/Retour</option>
+                                <option>Retour</option>
                             </select>
                         </div>
                         
-                        <div class="uk-padding-small">
+                        <div class="uk-margin-left">
                             <label for="">Nombre de passager(s)</label>
                             <select class="uk-select">
                                 <option>1</option>
                                 <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
                             </select>
                         </div>
                         
                         
                     </div>
-                    <div class="uk-margin">
-                        <button class="uk-button uk-button-default  ">Estimer</button>
+                    <div class="uk-margin-medium">
+                        <button class="uk-button uk-button-default uk-border-rounded " style="color: white;background-color: #6C757D;">Reserver</button>
                     </div>
                     
             
@@ -125,6 +141,9 @@
             </form> 
         </div>
     </div>
+
+    
+    
     
     <div class="uk-margin  uk-hidden@m">
         <div class="uk-padding-large ">
@@ -175,6 +194,22 @@
                         
                         
                     </div>
+                    <div class="uk-margin-top uk-text-center uk-flex uk-flex-center  uk-child-width-auto ">
+                        
+                        <div class="uk-margin-left">
+                            <label for="">Date</label>
+                            <input class="uk-input" type="text" placeholder="Date">
+                        </div>
+
+                        <div class="uk-margin-left">
+                            <label for="">Heure</label>
+                            <input class="uk-input" type="text" placeholder="Heure">
+                        </div>
+
+                        
+                    
+                    
+                </div>
                     <div class="uk-margin">
                         <button class="uk-button uk-button-default  ">Estimer</button>
                     </div>
@@ -198,26 +233,27 @@
     
     
     
-    <div class=" uk-flex uk-flex-center uk-border uk-padding ">
+    <div class=" uk-flex uk-flex-center uk-border uk-padding-large " style="background-color: #6C757D;">
          
-        <span class="uk-margin-auto-vertical">
+        <span class="uk-margin-auto-vertical" style="color: white;">
              
             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
          </span>
          
-        <button class="uk-button uk-button-default uk-align-right uk-margin-auto-vertical">Contact</button>
+        <button class="uk-button uk-button-primary uk-align-right uk-margin-auto-vertical" style="color: white;">Contact</button>
          
 
     </div>
-    <footer class="uk-padding-small uk-padding-medium-y " >
+    
+    <footer class="uk-padding-small uk-padding-medium-y " style="background-color: #212529;color: white;" >
             <div class="uk-child-width-1-4@m " uk-grid>
                 <div>
                     <a href="" class="uk-logo uk-padding-left-remove">
-                     LOGO
+                        <img src="imgs/logo.png" alt="" style="height: 200px" >
                     </a>
                 </div>    
-                <div>
-                    <p class="uk-text-uppercase uk-text-bold uk-text-secondary">Information</p>
+                <div class="uk-padding">
+                    <p class="uk-text-uppercase uk-text-bold ">Information</p>
                     <div>
                         <ul class="uk-list uk-list-collapse">
                             <li>List item 1</li>
@@ -226,8 +262,8 @@
                         </ul>
                     </div>
                 </div>
-                <div>
-                    <p class="uk-text-uppercase uk-text-bold uk-text-secondary">Services</p>
+                <div class="uk-padding">
+                    <p class="uk-text-uppercase uk-text-bold ">Services</p>
                     <div>
                         <ul class="uk-list uk-list-collapse">
                             <li>List item 1</li>
@@ -236,8 +272,8 @@
                         </ul>
                     </div>
                 </div>
-                <div>
-                    <p class="uk-text-uppercase uk-text-bold uk-text-secondary">Mon compte</p>
+                <div class="uk-padding">
+                    <p class="uk-text-uppercase uk-text-bold ">Mon compte</p>
                     <div>
                         <ul class="uk-list uk-list-collapse">
                             <li>List item 1</li>
