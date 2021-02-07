@@ -9,31 +9,37 @@
     <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
 
     <!-- UIkit CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.16/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="css/uikit.min.css" />
     
-    
+    <style>
+        .uk-navbar-nav>li.uk-active>a{
+            color: white  !important;
+        }
+    </style>
+
 </head>
 <body>
     
     <main>
         <header>
-            <nav class="uk-navbar-container uk-visible@m" uk-navbar style="background: white" >
+            <nav class="uk-navbar uk-visible@m uk-background-primary" uk-navbar>
                 <div class="uk-navbar-left">
                     <a href="" class="uk-navbar-item uk-logo">
                         <img src="imgs/logo.png" alt="" style="height: 100px" >    
                     </a>
                     <ul class="uk-navbar-nav">
-                        <li class="uk-active"><a href="/nous.html">Qui sommes nous</a></li>
-                        <li class="uk-active"><a href="">Services</a></li>
-                        <li class="uk-active"><a href="/contact.html">Contact</a></li>
+                        <li class="uk-active"><a href="/nous.html" class="uk-text-bold">Qui sommes nous</a></li>
+                        <li class="uk-active"><a href="/index.html" class="uk-text-bold">Services</a></li>
+                        <li class="uk-active"><a href="/contact.html" class="uk-text-bold">Contact</a></li>
+                        <li class="uk-active"><a href="/profile.html" class="uk-text-bold">Profile</a></li>
                         <li><a href=""></a></li>
                     </ul>
                 </div>
                 
                 <div class="uk-navbar-right">
                     <ul class="uk-navbar-nav">
-                        <li class="uk-active"><a href="">S'inscrire</a></li>
-                        <li class="uk-active"><a href="">Se Connecter</a></li>
+                        <li class="uk-active"><a href="" class="uk-text-bold">S'inscrire</a></li>
+                        <li class="uk-active"><a href="" class="uk-text-bold">Se Connecter</a></li>
                         <li><a href=""></a></li>
                     </ul>
                 </div>
@@ -53,32 +59,31 @@
                     </ul>
                 </div>
             </nav>
-            
-        </header>
+            </header>
+
         <section class="uk-section  uk-padding-small">
             <!-- Start -->
-            <div class="uk-grid-small" uk-grid>
-                <div class="uk-width-1-5@s">
-                    <div class="uk-card uk-card-small uk-card-body uk-border uk-border-rounded uk-margin-bottom-small">
+            <div class="uk-grid-small uk-padding" uk-grid>
+                <div class="uk-width-1-5@s uk-padding" style="background-color: #6C757D;color: white;">
+                    <div class="uk-card uk-card-small uk-card-body uk-border uk-border-rounded uk-margin-bottom-small" style="color: white;">
                         <div class="uk-grid-small uk-flex-middle" uk-grid>
                             <div class="uk-width-auto" id="avatar">
                                 <img class="uk-border-circle" width="60" height="60" src="https://tinyfac.es/data/avatars/7D3FA6C0-83C8-4834-B432-6C65ED4FD4C3-500w.jpeg">
                             </div>
                             <div class="uk-width-expand">
-                                <p class="uk-text-secondary uk-margin-remove-bottom uk-text-weight-700">John</p>
-                                <p class="uk-text-secondary uk-margin-remove-top">Doe</p>
+                                <p class="uk-text-bold uk-margin-remove-bottom uk-text-weight-700">John</p>
+                                <p class="uk-text-bold uk-margin-remove-top">Doe</p>
                             </div>
                         </div>
                     </div>
                     <div class="uk-card uk-card-small uk-card-body uk-border uk-border-rounded">
                         
                         <ul class="uk-nav-default uk-nav-parent-icon uk-padding-bottom-remove" uk-nav>
-                            <li class="uk-active"><a href="/profile.html"><span class="uk-margin-small-right " uk-icon="icon: thumbnails"></span> Mes Informations</a>
+                            <li class="uk-active"><a href="/profile.html" style="color: white;"><span class="uk-margin-small-right uk-text-bold" style="color: white;" uk-icon="icon: thumbnails"></span> Mes Informations</a>
                             </li>
-                            <li><a href="/reservations.html"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Mes Reservations</a></li>
-                            <li><a href="/profile.html"><span class="uk-margin-small-right" uk-icon="icon: lock"></span> Mot de passe</a></li>
+                            <li><a href="/reservations.html" style="color: white;"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Mes Reservations</a></li>
                             <li class="uk-nav-divider"></li>
-                            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: sign-out"></span> Deconnecter</a></li>
+                            <li><a href="#" style="color: white;"><span class="uk-margin-small-right" uk-icon="icon: sign-out"></span> Deconnecter</a></li>
                         </ul>
                     </div>
                 </div>
@@ -195,15 +200,15 @@
 
 
         <!-- Start -->
-        <footer class="uk-padding-small uk-padding-medium-y " >
+        <footer class="uk-padding-small uk-padding-medium-y " style="background-color: #212529;color: white;" >
             <div class="uk-child-width-1-4@m " uk-grid>
                 <div>
                     <a href="" class="uk-logo uk-padding-left-remove">
                         <img src="imgs/logo.png" alt="" style="height: 200px" >
                     </a>
                 </div>    
-                <div>
-                    <p class="uk-text-uppercase uk-text-bold uk-text-secondary">Information</p>
+                <div class="uk-padding">
+                    <p class="uk-text-uppercase uk-text-bold ">Information</p>
                     <div>
                         <ul class="uk-list uk-list-collapse">
                             <li>List item 1</li>
@@ -212,8 +217,8 @@
                         </ul>
                     </div>
                 </div>
-                <div>
-                    <p class="uk-text-uppercase uk-text-bold uk-text-secondary">Services</p>
+                <div class="uk-padding">
+                    <p class="uk-text-uppercase uk-text-bold ">Services</p>
                     <div>
                         <ul class="uk-list uk-list-collapse">
                             <li>List item 1</li>
@@ -222,8 +227,8 @@
                         </ul>
                     </div>
                 </div>
-                <div>
-                    <p class="uk-text-uppercase uk-text-bold uk-text-secondary">Mon compte</p>
+                <div class="uk-padding">
+                    <p class="uk-text-uppercase uk-text-bold ">Mon compte</p>
                     <div>
                         <ul class="uk-list uk-list-collapse">
                             <li>List item 1</li>
