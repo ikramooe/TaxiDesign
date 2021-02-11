@@ -19,14 +19,23 @@
         <header>
             <nav class="uk-navbar uk-visible@m uk-background-primary" uk-navbar>
                 <div class="uk-navbar-left">
-                    <a href="" class="uk-navbar-item uk-logo">
-                        <img src="imgs/logo.png" alt="" style="height: 100px" >    
+                    <a href="" class="uk-navbar-item uk-logo" style="background-color: white;">
+                        <img src="imgs/logo.png" alt="" class="uk-text-center" style="width: 200px;background-color: white;" >    
                     </a>
-                    <ul class="uk-navbar-nav">
+                    <ul class="uk-navbar-nav uk-position-center">
+                        <li class="uk-active"><a href="/index.html" class="uk-text-bold">Acceuil</a></li>
                         <li class="uk-active"><a href="/nous.html" class="uk-text-bold">Qui sommes nous</a></li>
-                        <li class="uk-active"><a href="/index.html" class="uk-text-bold">Services</a></li>
+                        <li class="uk-active">                    
+                            <a href="#" class="uk-text-bold" >Services</a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li class="uk-active"><a href="/detailsNav.html">Navettes</a></li>
+                                    <li class="uk-active"><a href="/detailsTransPart.html">Transport Particuliers</a></li>
+                                    <li class="uk-active"> <a href="/detailsTransPro.html">Transport Professionel</a></li>
+                                </ul>
+                            </div>
+                        </li>
                         <li class="uk-active"><a href="/contact.html" class="uk-text-bold">Contact</a></li>
-                        <li class="uk-active"><a href="/profile.html" class="uk-text-bold">Profile</a></li>
                         <li><a href=""></a></li>
                     </ul>
                 </div>
