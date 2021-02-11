@@ -10,3 +10,13 @@
     z-index: 9999;
     background: url(https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff;
 }
+
+.uk-button-primary::selection{
+    background:#FFC300 !important;
+    color: white  !important;
+}
+
+.uk-button-primary:hover, .uk-button-primary:focus{
+    background:#FFC300 !important;
+    color: white  !important;
+}
